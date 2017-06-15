@@ -12,11 +12,10 @@ var api = {
 
 $.getJSON(api.url, function (tema) {
     tema.forEach(urlIndividual);
-    console.log(urlIndividual);
+;
 });
 
 var cargarPagina = function () {
-    cargarRespuestas();
     urlIndividual();
 };
 
@@ -26,6 +25,7 @@ var urlIndividual = function(tema) {
     console.log(id);
     
     var urlPorTema = api.url + id + "/responses";
+    console.log(urlPorTema);
 };
 
 $(document).ready(cargarPagina);
