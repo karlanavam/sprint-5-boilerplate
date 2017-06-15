@@ -28,5 +28,4 @@ var urlIndividual = function(tema) {
     var urlPorTema = api.url + id + "/responses";
 };
 
-
 $(document).ready(cargarPagina);
