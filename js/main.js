@@ -20,7 +20,7 @@ var cargarTemas = function () {
 var crearTemas = function (tema) {
     var id = tema.id;
     var autor = tema.author_name;
-    var tema = tema.content;
+    var temaContenido = tema.content;
     var respuestas = tema.responses_count;
     console.log(respuestas);
     
@@ -28,7 +28,7 @@ var crearTemas = function (tema) {
     var $tr = $("<tr />");
     // creamos la celda del nombre
     var $temaTd = $("<td />");
-    $temaTd.text(tema + " - Por: " + autor);
+    $temaTd.text(temaContenido + "   -  Por: " + autor);
     // creamos la celda del estado
     var $respuestasTd = $("<td />");
     $respuestasTd.html("Respuestas: " + '<a>' + respuestas + '</a>');
